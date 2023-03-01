@@ -1,0 +1,23 @@
+
+El sistema de la libreria fue un éxito y 
+por tal motivo desea incorporar nuevas funcionalidades
+Un servicio que permita obtener una copia de un producto kit o paquete.
+Una copia se constituye como un nuevo objeto el cual debe poseer 
+los mismos valores que el original, pero una identidad propia. 
+En el caso de los kits y paquetes cuando se obtiene una copia de ellos, 
+ esta nueva copia tendrá como elementos propios una copia de cada uno 
+de los elementos que contenia la original.
+
+Un servicio para implementar una libreria temática. 
+En este caso es un servicio similar al anterior, en el cual se debe 
+obtener una copia de un producto kit o paquete, 
+pero la copia se ve restringida acorde a las necesidades de la temática.
+
+Por ejemplo en la copia quedan solo los productos que posean un precio
+ mayor a 500, o solo de la marca Pelikan. 
+Si un producto no cumple con esta restricción, 
+el mismo no se copia (se retoma null), en el caso de los kits o paquetes
+se obtiene una copia del mismo pero en la cual los elementos que contenga 
+la nueva copia cumplan con la restricción establecida 
+(esto aplica de forma recursiva con los elementos que se copian), 
+en el caso de que el kit o paquete quede vacio, el mismo no debe copiarse (se retorna null)

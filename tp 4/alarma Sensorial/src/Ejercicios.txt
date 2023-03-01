@@ -1,0 +1,28 @@
+//1 - Alarma
+//  Implementar en Java todo el código necesario para el 
+// funcionamiento de una alarma. La alarma tiene tres variables 
+// que indican si: se rompió un vidrio, se abrió una puerta o ventana,
+//  se detectó un movimiento dentro del domicilio. Cuando se invoca  
+// al método comprobar() de la alarma, la misma chequea si alguna de sus
+//  variables indica que debe hacer sonar la señal sonora.
+//  Crea una clase denominada AlarmaLuminosa que, además de activar 
+//  la señal sonora,
+//  encienda una luz cuando alguno de los indicadores está activado.
+//  Nota: Asumir que hay una clase Timbre, con un método hacerSonar()
+//  y una clase Luz con el método encender().
+
+
+2/ Alarma Sensorial 
+
+3. 3 - Sueldos
+Una empresa de informática posee tres tipos de empleados. 
+Los empleados contratados reciben un salario fijo semanal, sin importar 
+la cantidad de horas trabajadas. 
+
+Los empleados por horas extras reciben un monto fijo semanal más un monto extra 
+por cada hora trabajada.
+
+Finalmente, los empleados por comisión reciben un sueldo
+ fijo, más un porcentaje por la cantidad de ventas realizadas.
+Implementar un sistema que permita saber cuánto se le debe pagar a un 
+empleado al finalizar la semana.
