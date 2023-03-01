@@ -2,12 +2,13 @@
 
 public class AlarmaLuminosa extends Alarma{
 
+    protected Luz luz;
 
     @Override
     public void comprobar() {
         if (vidrioRoto || accesoAbierto || movimiento) {
-            //Timbre.hacerSonar();
-            //Luz.encender();
+            timbre.sonar();
+            luz.encender();
         }
     }
 

@@ -2,11 +2,14 @@ public class Alarma {
     protected boolean vidrioRoto;
     protected boolean accesoAbierto;
     protected boolean movimiento;
+    protected Timbre timbre;
+
 
     public Alarma () {
         vidrioRoto = false;
         accesoAbierto = false;
         movimiento = false;
+        timbre = new Timbre();
     }
 
     public void setVidrioRoto(boolean estaRoto) {
@@ -23,11 +26,8 @@ public class Alarma {
 
     public void comprobar() {
         if (vidrioRoto || accesoAbierto || movimiento) {
-            //Timbre.hacerSonar();
+            timbre.sonar();
         }
-    }
-
-    public void agregarSensor(Sensor s1) {
     }
 
 }
